@@ -72,7 +72,7 @@ class SidekickTeamBuilder<T> extends StatefulWidget {
   static SidekickTeamBuilderState<T> of<T>(BuildContext context) {
     assert(context != null);
     final SidekickTeamBuilderState<T> result =
-        context.ancestorStateOfType(TypeMatcher<SidekickTeamBuilderState<T>>());
+        context.findAncestorStateOfType(TypeMatcher<SidekickTeamBuilderState<T>>());
     return result;
   }
 
